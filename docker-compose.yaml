@@ -1,0 +1,17 @@
+services:
+  api:
+    build:
+      context: .
+    command: npx tsx watch src/api/app.ts
+    environment:
+      NODE_ENV: development
+      PORT: 3000
+    ports:
+      - 3000:3000
+
+  # event-consumer:
+  #   build:
+  #     context: .
+  #   command: node dist/consumers/event-consumer/app.js
+  #   environment:
+  #     NODE_ENV: production

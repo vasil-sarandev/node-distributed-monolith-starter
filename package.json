@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:api:dev": "npx tsx watch --env-file src/api/env/.env.local src/api/app.ts",
+    "build": "tsc",
+    "start:api": "node dist/api/app.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "npx prettier --write .",
