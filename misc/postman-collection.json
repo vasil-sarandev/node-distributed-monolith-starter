@@ -1,0 +1,112 @@
+{
+  "info": {
+    "_postman_id": "e392b5a2-0f72-4f9e-8734-da6b16d14db5",
+    "name": "node-distributed-monolith",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53395231",
+    "_collection_link": "https://go.postman.co/collection/53395231-e392b5a2-0f72-4f9e-8734-da6b16d14db5?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "User / Get All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{API_URL}}/api/user",
+          "host": [
+            "{{API_URL}}"
+          ],
+          "path": [
+            "api",
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User / Get By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{API_URL}}/api/user/1",
+          "host": [
+            "{{API_URL}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Product / Get All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{API_URL}}/api/product",
+          "host": [
+            "{{API_URL}}"
+          ],
+          "path": [
+            "api",
+            "product"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Product / Get By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{API_URL}}/api/product/1",
+          "host": [
+            "{{API_URL}}"
+          ],
+          "path": [
+            "api",
+            "product",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Event Handler",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"topic\": \"topic-1\",\n    \"payload\": {\n        \"items\": [0,1,2]\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{API_URL}}/api/event",
+          "host": [
+            "{{API_URL}}"
+          ],
+          "path": [
+            "api",
+            "event"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
