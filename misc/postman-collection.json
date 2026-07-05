@@ -14,13 +14,8 @@
         "header": [],
         "url": {
           "raw": "{{API_URL}}/api/user",
-          "host": [
-            "{{API_URL}}"
-          ],
-          "path": [
-            "api",
-            "user"
-          ]
+          "host": ["{{API_URL}}"],
+          "path": ["api", "user"]
         }
       },
       "response": []
@@ -32,14 +27,30 @@
         "header": [],
         "url": {
           "raw": "{{API_URL}}/api/user/1",
-          "host": [
-            "{{API_URL}}"
-          ],
-          "path": [
-            "api",
-            "user",
-            "1"
-          ]
+          "host": ["{{API_URL}}"],
+          "path": ["api", "user", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Product / Restock - Async",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"quantity\": 60\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{API_URL}}/api/product/1/restock",
+          "host": ["{{API_URL}}"],
+          "path": ["api", "product", "1", "restock"]
         }
       },
       "response": []
@@ -51,13 +62,8 @@
         "header": [],
         "url": {
           "raw": "{{API_URL}}/api/product",
-          "host": [
-            "{{API_URL}}"
-          ],
-          "path": [
-            "api",
-            "product"
-          ]
+          "host": ["{{API_URL}}"],
+          "path": ["api", "product"]
         }
       },
       "response": []
@@ -69,14 +75,30 @@
         "header": [],
         "url": {
           "raw": "{{API_URL}}/api/product/1",
-          "host": [
-            "{{API_URL}}"
-          ],
-          "path": [
-            "api",
-            "product",
-            "1"
-          ]
+          "host": ["{{API_URL}}"],
+          "path": ["api", "product", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User / Marketing Consent - Async Copy",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"accepts_marketing\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{API_URL}}/api/user/1/marketing-consent",
+          "host": ["{{API_URL}}"],
+          "path": ["api", "user", "1", "marketing-consent"]
         }
       },
       "response": []
@@ -97,13 +119,8 @@
         },
         "url": {
           "raw": "{{API_URL}}/api/event",
-          "host": [
-            "{{API_URL}}"
-          ],
-          "path": [
-            "api",
-            "event"
-          ]
+          "host": ["{{API_URL}}"],
+          "path": ["api", "event"]
         }
       },
       "response": []
