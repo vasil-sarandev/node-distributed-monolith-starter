@@ -37,8 +37,6 @@ FROM base AS runtime
 # copy production dependencies and compiled output from build stage
 COPY --from=install-deps /usr/src/app/node_modules ./node_modules
 COPY --from=build /usr/src/app/dist ./dist
-# copy package.json
-COPY package.json ./
 # set environment variables
 ENV NODE_ENV=production
 # start the application (override per service in deployments configs)
