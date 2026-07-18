@@ -111,5 +111,5 @@ jobs:
         with:
           task-definition: ${{ steps.render.outputs.task-definition }}
           service: ${{ matrix.service }}
-          cluster: node-modulith-cluster
+          cluster: node-modulith-cluster-1
           wait-for-service-stability: true
