@@ -75,6 +75,8 @@ jobs:
           - service: product-restocked-consumer
             container: product-restocked-consumer
     steps:
+      - run: echo "got image = '${{ needs.build-and-push-image.outputs.image }}'"
+
       - uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
